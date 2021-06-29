@@ -14,12 +14,10 @@ tensorflow(-gpu)は2系でも動くと思われる
 
 ## ディレクトリとその役割
 
-### 主要なディレクトリ
-* models    : AI のモデル
-* outputs   : 学習後のモデルやログなどの結果・出力を保存する (実行時に作成されたり、したりする)
-	- logs
-	- models
-* utils     : ユーティリティ
+### 主要なプログラム
+* lim_bunkatu20210315.py    : jpg画像の切り取りプログラム. モデルの入力サイズに合わせる.
+* traing_model.py   : モデルの学習プログラム
+* count_point_RGB.py     : 画像のピクセルのRGB,HSVの情報を取り出すプログラム
 
 
 
@@ -39,14 +37,14 @@ ML_open
 │   │   |   ├── RGB2HSV_0417.py
 │   │   |   ├── final
 │   │   |   |   ├── 1
-│   │   |   |   |   ├── cropped
+│   │   |   |   |   └── cropped
 │   │   |   |   ├── 2
-│   │   |   |   |   ├── cropped
+│   │   |   |   |   └── cropped
 │   │   |   |   ├── 3
-│   │   |   |   |   ├── cropped
+│   │   |   |   |   └── cropped
 │   │   |   |   ├── 4
-│   │   |   |   |   ├── cropped
+│   │   |   |   |   └── cropped
 │   │   |   |   ├── 5
-│   │   |   |   |   ├── cropped
+│   │   |   |   |   └── cropped
 
 ```
