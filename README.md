@@ -3,10 +3,12 @@
 ## 環境
 * `python 3.6`
 
+[](
 ```shell
 $ python --version
 Python 3.6.9
 ```
+)
 
 ### 仮想環境
 
