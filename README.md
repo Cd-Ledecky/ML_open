@@ -3,56 +3,14 @@
 ## 環境
 * `python 3.6`
 
-
-//```
-//shell/
-//$ python --version/
-//Python 3.6.9/
-//```
-
-
-### 仮想環境
-
-* [pyenv](https://github.com/pyenv/pyenv):
-  python 仮想環境には pyenv を用いています。
-  システムの python と切り離す目的や、python のバージョンを好きに変更できるために使っています、
-* [venv](https://docs.python.org/3.8/library/venv.html):
-  python package の仮想環境には venv を用いています。
-  python 標準で用意されている仮想環境です。
-
-* (パッケージ) 仮想環境の作成
-
-```shell
-$ python -m venv venv
-```
-
-* 仮想環境のアクティベート (有効化)
-
-```shell
-# MacOS or Linux
-$ source venv/bin/activate
-
-# Windows (?)
-> .\[newenvname]\Scripts\activate
-```
-
-* ライブラリのインストール
-
-```shell
-$ pip install --upgrade pip
-$ pip install -r requirements.txt
-```
-
-
-* [日本語 help - venv: Python 仮想環境管理](https://qiita.com/fiftystorm36/items/b2fd47cf32c7694adc2e)
-
-
-## 主要なライブラリのバージョン
+## 主要ライブラリのバージョン
 
 ```
 tensorflow(-gpu)==1.14
 keras==2.3
 ```
+tensorflow(-gpu)は2系でも動くと思われる
+
 
 ## ディレクトリとその役割
 
@@ -63,11 +21,32 @@ keras==2.3
 	- models
 * utils     : ユーティリティ
 
+
+
 ## ディレクトリ構成
 
 ```
-.nori_project/
-├── README.md
-├── models
-└── utils
+ML_open
+├── Classified_object_name
+│   ├── 299299bunkatu_29299315.py
+│   ├── lim_bunkatu20210315.py
+│   ├── traing_model.py
+│   ├──20210409
+│   │   ├── original_data
+│   │   |   ├── count_point_RGB.py
+│   │   |   ├── count_point_RGB_test.py
+│   │   |   ├── lim_bunkatu.py
+│   │   |   ├── RGB2HSV_0417.py
+│   │   |   ├── final
+│   │   |   |   ├── 1
+│   │   |   |   |   ├── cropped
+│   │   |   |   ├── 2
+│   │   |   |   |   ├── cropped
+│   │   |   |   ├── 3
+│   │   |   |   |   ├── cropped
+│   │   |   |   ├── 4
+│   │   |   |   |   ├── cropped
+│   │   |   |   ├── 5
+│   │   |   |   |   ├── cropped
+
 ```
